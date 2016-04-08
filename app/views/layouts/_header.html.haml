@@ -1,0 +1,23 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed{ "data-toggle" => "collapse",  "data-target" => "#voices-menu", "aria-expanded" => "false" }
+        %span.sr-only="Toggle navigation"
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      =link_to root_path, class: "navbar-brand" do
+        =image_tag "logo.png", alt: "Brand", size: "30x30"
+
+    .collapse.navbar-collapse#voices-menu
+      %ul.nav.navbar-nav
+        %li
+          =link_to "About", about_path
+        %li
+          =link_to "For Advocacy Groups", advocacy_path
+        %li
+          =link_to "For Individuals", individuals_path
+        %li
+          =link_to "Blog", blog_path
+        %li
+          =link_to "Contact", contact_path
