@@ -1,0 +1,30 @@
+body {
+  font-family: "proxima-nova";
+  font-size: 21px;
+  line-height: 1.8em;
+  text-transform: none;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+
+  .image-wrapper {
+    position: relative;
+      left: 0;
+      top: 0;
+    #landing-page-image {
+      position: relative;
+        left: 0;
+        top: 0;
+    }
+    #itunes-button {
+      position: absolute;
+        left: 0;
+        bottom: 30px;
+      }
+    #google-play-button {
+      position: absolute;
+        left: 205px;
+        bottom: 30px;
+      }
+  }
+}

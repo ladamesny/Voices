@@ -1,0 +1,40 @@
+#hero
+  .image-wrapper
+    = image_tag 'voicesLandingPage.png', id: "landing-page-image"
+    = link_to '//itunes.apple.com/us/app/congress-voices/id965692648?mt=8', target: '_blank' do
+      = image_tag 'itunes-button.png', id: 'itunes-button'
+    = link_to '//play.google.com/store/apps/details?id=productions.darkmatter.voices', target: '_blank' do
+      = image_tag 'google-play-button', id: 'google-play-button'
+
+%section#page
+  .sqs-layout.col-md-12
+    .row
+      .col-md-12
+        .sqs-block.html-block.sqs-block-html
+          .sqs-block-content
+            %h3.text-align-center
+              Voices is a tool that makes advocacy groups and individuals more influential in government.
+            %p
+              &nbsp;
+            %h3.text-align-center
+              %strong
+                Here's how it works
+            %p
+              &nbsp;
+            %p.text-align-center
+              %strong
+                Step 1&nbsp;&nbsp;
+            %p.text-align-center
+              Advocacy groups use the Voices web app to compose and send calls to action to their members.
+            %p.text-align-center
+              %strong
+                Step 2
+            %p.text-align-center
+              &nbsp;Group members answer the call to action and participate directly in the policy process using the Voices mobile app.
+            %p.text-align-center
+              %strong
+                Step 3
+            %p.text-align-center
+              &nbsp;Advocacy groups receive data and insight about how users responded to their call to action.
+            %p
+              &nbsp;
