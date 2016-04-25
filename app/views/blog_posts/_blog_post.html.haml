@@ -1,0 +1,11 @@
+.row
+  .col-md-12
+    %h3=blog_post['title']
+    .body
+      =blog_post['content'].html_safe
+    .footer
+      =link_to "Original Post", blog_post['short_URL'], target: '_blank'
+      %p
+        ="Published on #{blog_post['date']}"
+
+

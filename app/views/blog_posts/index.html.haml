@@ -1,0 +1,3 @@
+%section#blog-posts
+  - @blog_posts.each do |blog_post|
+    =render partial: 'blog_post.html.haml', locals:{ blog_post: blog_post }

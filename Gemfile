@@ -15,6 +15,8 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
+gem 'rubypress', '~> 1.2'
+gem 'httparty'
 
 group :development, :test do
   gem 'rspec-rails'
