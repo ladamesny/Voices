@@ -2,8 +2,8 @@ class BlogPostsController < ApplicationController
   include HTTParty
 
   def index
-    response = HTTParty.get('https://public-api.wordpress.com/rest/v1.1/sites/tryvoices.wordpress.com/posts')
-    @blog_posts = response['posts']
+    posts = HTTParty.get('https://public-api.wordpress.com/rest/v1.1/sites/tryvoices.wordpress.com/posts')
+    @blog_posts = posts['posts']
   end
 
   def show

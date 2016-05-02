@@ -3,19 +3,21 @@ ruby "2.2.1"
 
 gem 'rails', '4.2.5'
 gem 'pg', '~> 0.15'
+
 gem 'uglifier', '>= 1.3.0'
-gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
-gem 'quiet_assets'
+gem 'autoprefixer-rails'
 gem 'haml', '~> 4.0', '>= 4.0.7'
-gem 'devise'
+gem 'quiet_assets'
+
+gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
-gem 'autoprefixer-rails'
-gem 'rubypress', '~> 1.2'
+gem 'jbuilder', '~> 2.0'
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem 'devise'
 gem 'httparty'
 
 group :development, :test do

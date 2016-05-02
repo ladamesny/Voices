@@ -1,11 +1,14 @@
 .row
-  .col-md-12
+  .post.col-md-12{'data-post-id': blog_post['ID'], id: "post_#{blog_post['ID']}"}
     %h3=blog_post['title']
     .body
       =blog_post['content'].html_safe
     .footer
       =link_to "Original Post", blog_post['short_URL'], target: '_blank'
       %p
-        ="Published on #{blog_post['date']}"
+        ="Published on #{format_time(blog_post['date'])}"
+
+      .share_buttons
+
 
 

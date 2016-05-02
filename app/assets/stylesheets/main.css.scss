@@ -7,6 +7,15 @@ body {
   font-style: normal;
   text-decoration: none;
 
+  strong {
+    font-weight: bold;
+  }
+
+  h3{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+  }
   .image-wrapper {
     position: relative;
       left: 0;
@@ -27,4 +36,10 @@ body {
         bottom: 30px;
       }
   }
+
+  .comment-author-image{
+    height: 50px;
+    width: 50px;
+  }
+
 }
