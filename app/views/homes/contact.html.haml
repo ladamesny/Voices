@@ -1,12 +1,9 @@
-.row
-  .col-md-12
-    %h3
-      %strong
-        Contact
-  .col-md-12
-    %strong
-      John Bogil
-  .col-md-12
-    =link_to '@johnbogilll', "//twitter.com/johnbogilll"
-  .col-md-12
-    john@voicesapp.us
+#contactpg.container
+  .row
+    .col-md-6.col-md-push-1
+      %h2#contact_title Contact
+  .row
+    .col-md-3.col-md-push-1
+      %h3#contact_name John Bogil
+      %h3#contact_twitter= link_to '@johnbogilll', "//twitter.com/johnbogilll", style: "color: #eb7e23"
+      %h3#contact_email john@voicesapp.us

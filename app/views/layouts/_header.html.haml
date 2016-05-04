@@ -1,5 +1,6 @@
 %nav.navbar.navbar-default.navbar-fixed
-  .container-fluid
+
+  .container
     .navbar-header
       %button.navbar-toggle.collapsed{ "data-toggle" => "collapse",  "data-target" => "#voices-menu", "aria-expanded" => "false" }
         %span.sr-only="Toggle navigation"
@@ -7,7 +8,9 @@
         %span.icon-bar
         %span.icon-bar
       =link_to root_path, class: "navbar-brand" do
-        =image_tag "logo.png", alt: "Brand", size: "30x30"
+        =image_tag "logo.png", alt: "Brand", size: "32x32"
+
+
 
     .collapse.navbar-collapse#voices-menu
       %ul.nav.navbar-nav

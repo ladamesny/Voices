@@ -1,4 +1,14 @@
+.navbar.navbar-default.navbar-fixed {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand{
+  margin-top: -8px;
+}
+
 body {
+  margin: 0;
   font-family: "proxima-nova";
   font-size: 21px;
   line-height: 1.8em;
@@ -15,31 +25,98 @@ body {
     font-size: 1.3em;
     line-height: 1.5em;
     letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
   }
-  .image-wrapper {
-    position: relative;
-      left: 0;
-      top: 0;
-    #landing-page-image {
-      position: relative;
-        left: 0;
-        top: 0;
+
+  h2{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+  #steps {
+    text-align: center;
+  }
+
+  #info {
+    text-align: center;
+  }
+
+  p {
+    font-family: 'Montserrat Light', arial;
+    font-size: 18px;
+  }
+
+  strong {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .landing_image {
+      background-image: asset-url('voicesLandingPage.png');
+      background-size: cover;
+      height: 500px;
     }
+
     #itunes-button {
-      position: absolute;
-        left: 0;
-        bottom: 30px;
+        position: absolute;
+        left: 40px;
+        margin-top: 320px;
       }
     #google-play-button {
-      position: absolute;
-        left: 205px;
-        bottom: 30px;
+        position: absolute;
+        left: 250px;
+        margin-top: 320px;
       }
-  }
 
   .comment-author-image{
     height: 50px;
     width: 50px;
+  }
+
+  #main_message {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+  }
+
+  .page-divider {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom-width: 2px;
+  }
+
+  #advocacypg {
+    margin-top: 30px;
+  }
+
+  #individualspg {
+    margin-top: 30px;
+  }
+
+  #aboutpg {
+    margin-top: 30px;
+  }
+
+  #contactpg {
+    margin-top: 30px;
+  }
+
+  #contact_title {
+    text-align: left;
+  }
+
+  #contact_name {
+    text-align: left;
+  }
+
+  #contact_twitter {
+    text-align: left;
+  }
+
+  #contact_email {
+    text-align: left;
   }
 
 }
