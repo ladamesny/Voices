@@ -59,16 +59,16 @@ body {
       height: 500px;
     }
 
-    #itunes-button {
-        position: absolute;
-        left: 40px;
-        margin-top: 320px;
-      }
-    #google-play-button {
-        position: absolute;
-        left: 250px;
-        margin-top: 320px;
-      }
+  #itunes-button {
+      position: absolute;
+      left: 40px;
+      margin-top: 320px;
+    }
+  #google-play-button {
+      position: absolute;
+      left: 250px;
+      margin-top: 320px;
+    }
 
   .comment-author-image{
     height: 50px;
@@ -117,6 +117,10 @@ body {
 
   #contact_email {
     text-align: left;
+  }
+
+  .blog-title {
+    margin: 20px;
   }
 
 }

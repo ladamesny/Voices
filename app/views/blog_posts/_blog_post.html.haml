@@ -1,6 +1,6 @@
-.row
-  .post.col-md-12{'data-post-id': blog_post['ID'], id: "post_#{blog_post['ID']}"}
-    %h3=blog_post['title']
+.col-md-10.col-md-push-1
+  .post{'data-post-id': blog_post['ID'], id: "post_#{blog_post['ID']}"}
+    %h2.blog-title=blog_post['title']
     .body
       =blog_post['content'].html_safe
     .footer
