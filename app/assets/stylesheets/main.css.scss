@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url('/assets/proxima_nova_light')
+}
+
 .navbar.navbar-default.navbar-fixed {
   margin: 0;
   padding: 0;
@@ -8,8 +13,8 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
-  font-family: "proxima-nova";
   font-size: 21px;
   line-height: 1.8em;
   text-transform: none;
@@ -25,14 +30,14 @@ body {
     font-size: 1.3em;
     line-height: 1.5em;
     letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Proxima Nova Light', sans-serif;
     text-align: center;
   }
 
   h2{
     line-height: 1.5em;
     letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Proxima Nova Light', sans-serif;
     text-align: center;
   }
 
@@ -45,39 +50,45 @@ body {
   }
 
   p {
-    font-family: 'Montserrat Light', arial;
+    font-family: 'Proxima Nova Light', sans-serif;
     font-size: 18px;
   }
 
   strong {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Proxima Nova Light', sans-serif;
   }
 
-  .landing_image {
-      background-image: asset-url('voicesLandingPage.png');
-      background-size: cover;
-      height: 500px;
-    }
+  .buttons {
+    margin-bottom: 5px;
+  }
 
-  #itunes-button {
-      position: absolute;
-      left: 40px;
-      margin-top: 320px;
-    }
-  #google-play-button {
-      position: absolute;
-      left: 250px;
-      margin-top: 320px;
-    }
+    #itunes-button {
+        display: inline;
+        width:135px;
+        height:40px;
+        left: 12px;
+      }
+    #google-play-button {
+        display: inline;
+        width:135px;
+        height:40px;
+        left: 12px;
+      }
 
   .comment-author-image{
     height: 50px;
     width: 50px;
   }
 
+  .buttons {
+    position: relative;
+    bottom: 60px;
+    left: 15px;
+  }
+
   #main_message {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Proxima Nova Light', sans-serif;
     line-height: 1.5em;
     letter-spacing: 1px;
   }
