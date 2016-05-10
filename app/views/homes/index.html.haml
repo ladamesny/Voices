@@ -37,3 +37,20 @@
               Step 3
           %p#info
             Advocacy groups receive data and insight about how users responded to their call to action. 
+          %button#request_button.sqs-system-button.sqs-editable-button{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"} Request more information
+          / Modal
+          #myModal.modal.fade{:role => "dialog"}
+            .modal-dialog
+              .modal-content
+                %button.close{"data-dismiss" => "modal", :type => "button"} ×
+                %h4.modal-title Name
+                .modal-body
+                  .row
+                    .col-xs-6
+                      %input.form-control{:placeholder => "First Name", :type => "text"}/
+                    .col-xs-6
+                      %input.form-control{:placeholder => "Last Name", :type => "text"}/
+                  .row
+                    .col-xs-8
+                      %input.form-control{:placeholder => "Email Address", :type => "text"}/
+                  %button.btn.btn-default{"data-dismiss" => "modal", :type => "submit"} Request more information
