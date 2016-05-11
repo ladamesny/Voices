@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Proxima Nova Light";
-  src: url('/assets/proxima_nova_light')
+  src: url('/assets/proxima_nova_light');
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url('/assets/proxima_nova')
 }
 
 .navbar.navbar-default.navbar-fixed {
@@ -27,42 +32,10 @@ body {
   }
 
   h3{
-    font-size: 1.3em;
     line-height: 1.5em;
     letter-spacing: 1px;
     font-family: 'Proxima Nova Light', sans-serif;
     text-align: center;
-  }
-
-  h2{
-    line-height: 1.5em;
-    letter-spacing: 1px;
-    font-family: 'Proxima Nova Light', sans-serif;
-    text-align: center;
-  }
-
-  #steps {
-    text-align: center;
-  }
-
-  #info {
-    text-align: center;
-  }
-
-  p {
-    font-family: 'Proxima Nova Light', sans-serif;
-    font-size: 18px;
-  }
-
-  #request_button {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Helvetica';
-  padding: 10px 30px 10px 30px;
-  }
-
-  strong {
-    font-family: 'Proxima Nova Light', sans-serif;
   }
 
   .buttons {
@@ -100,9 +73,63 @@ body {
     letter-spacing: 1px;
   }
 
-  .page-divider {
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    border-bottom-width: 2px;
+  h2{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-family: 'Proxima Nova Light', sans-serif;
+    text-align: center;
+  }
+
+  #info {
+    text-align: left;
+  }
+
+  p {
+    font-family: 'Proxima Nova Light', sans-serif;
+    font-size: 21px;
+    padding: 30px 0 0 0;
+  }
+
+  a {
+    color: #eb7e23;
+  }
+
+  #request_button {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova';
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 10px 30px 10px 30px;
+  border-radius: 0;
+  background-color: transparent;
+  color: black;
+  border-width: 2px;
+  border-color: black;
+  }
+
+  .row {
+    margin: 30px 0 30px 0;
+  }
+
+  #request_button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+  }
+
+  strong {
+    font-family: 'Proxima Nova Light', sans-serif;
+  }
+
+  #fname_label {
+    font-family: 'Proxima Nova Light', sans-serif;
+    font-size: 12px;
+  }
+
+  #lname_label {
+    font-family: 'Proxima Nova Light', sans-serif;
+    font-size: 12px;
   }
 
   #advocacypg {
