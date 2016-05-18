@@ -19,6 +19,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 gem 'httparty'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
 group :development, :test do
   gem 'rspec-rails'
