@@ -1,13 +1,21 @@
 = flash[:notice]
 = form_tag("/homes/index") do
   .row
-    .col-md-8
-      .form-group
-        = label_tag :name, "Full Name"
-        = text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name"
+    .form-group
+      .col-sm-5.col-md-5.col-md-offset-1
+        = label_tag :first_name, "First Name"
+        = text_field_tag :first_name, nil, class: "form-control"
+      .col-sm-5.col-md-5
+        = label_tag :last_name, "Last Name"
+        = text_field_tag :last_name, nil, class: "form-control"
   .row
-    .col-md-8
+    .col-sm-10.col-md-10.col-md-offset-1
       .form-group
         = label_tag :email, "Email Address"
-        = text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email"
-  = submit_tag "Request more information", class: "button sqs-system-button sqs-editable-button" , id: "request_button"
+        = text_field_tag :email, nil, class: "form-control"
+        %br
+        = label_tag :message, "Message"
+        = text_area_tag :message, nil, class: 'form-control', rows: "3"
+
+    .col-sm-10.col-md-10.col-md-offset-4
+      = submit_tag "Send request", class: "button sqs-system-button sqs-editable-button" , id: "request_button", style: "margin-top: 15px"

@@ -1,10 +1,9 @@
-.landing_image
-  = image_tag 'voicesLandingPage.png', class: "img-responsive", style: "position:relative"
-  .buttons
-    = link_to '//itunes.apple.com/us/app/congress-voices/id965692648?mt=8', target: '_blank' do
-      = image_tag 'itunes-button.png', id: 'itunes-button', class: "img-responsive"
-    = link_to '//play.google.com/store/apps/details?id=com.johnbogil.voices', id: 'google-play-button', target: '_blank' do
-      = image_tag 'google-play-color.png', id: 'google-play-button', class: "img-responsive"
+= image_tag 'voicesLandingPage1.png', class: "img-responsive", id: "landing_img"
+.btn-group
+  = link_to '//itunes.apple.com/us/app/congress-voices/id965692648?mt=8', target: '_blank' do
+    = image_tag 'itunes-button.png', id: 'itunes-button', class: "img-responsive"
+  = link_to '//play.google.com/store/apps/details?id=com.johnbogil.voices', id: 'google-play-button', target: '_blank' do
+    = image_tag 'google-play-color.png', id: 'google-play-button', class: "img-responsive"
 
 %section#page
   .space
@@ -28,13 +27,12 @@
               %a{:href => "http://www.sopastrike.com/", :target => "_blank"} 2012 protests against SOPA/PIPA
             , and want to enable anybody to start a movement that can change their communities for the better. 
       .row
-        .col-md-10.col-md-push-4
+        .col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-2.col-md-10.col-md-push-4
           %button#request_button.sqs-system-button.sqs-editable-button{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"} Request more information
           / Modal
           #myModal.modal.fade{:role => "dialog"}
-            .modal-dialog{:style => "width: 50%;"}
-              .modal-content{:style => "height: 70%; overflow:scroll;"}
-                .modal-header
-                  %button.close{"data-dismiss" => "modal", :type => "button"} ×
+            .modal-dialog{:style => "width: 60%;"}
+              .modal-content{:style => "height: 100%; overflow:scroll;"}
                 .modal-body
+                  %button.close{"data-dismiss" => "modal", :type => "button"} ×
                   = render partial: 'homes/form.html.haml'

@@ -1,9 +1,16 @@
 #contactpg.container
   .row
-    .col-md-6.col-md-push-1
-      %h2#contact_title Contact
+    .col-md-6.col-md-offset-1
+      %h2#contact_title Contact me
   .row
-    .col-md-3.col-md-push-1
+    .col-md-3.col-md-offset-8
       %h3#contact_name John Bogil
-      %h3#contact_twitter= link_to '@johnbogilll', "//twitter.com/johnbogilll", style: "color: #eb7e23", target: '_blank'
       %h3#contact_email John@TryVoices.com
+  .row
+    .col-sm-3.col-md-6.col-md-offset-8
+      %a{:href => "https://twitter.com/johnbogilll"}
+        %i.fa.fa-twitter-square.fa-3x
+      %a{:href => "#"}
+        %i.fa.fa-facebook-square.fa-3x
+      %a{:href => "#"}
+        %i.fa.fa-linkedin-square.fa-3x

@@ -38,8 +38,9 @@ body {
     text-align: center;
   }
 
-  .buttons {
-    margin-bottom: 5px;
+  .btn-group {
+    left: 3px;
+    bottom: 40px;
   }
 
     #itunes-button {
@@ -58,12 +59,6 @@ body {
   .comment-author-image{
     height: 50px;
     width: 50px;
-  }
-
-  .buttons {
-    position: relative;
-    bottom: 60px;
-    left: 15px;
   }
 
   #main_message {
@@ -94,6 +89,11 @@ body {
     color: #eb7e23;
   }
 
+  .modal-body {
+    height: 500px;
+    width: 100%;
+  }
+
   #request_button {
   text-align: center;
   text-transform: uppercase;
@@ -110,6 +110,10 @@ body {
 
   .row {
     margin: 30px 0 30px 0;
+  }
+
+  textarea {
+    resize: none;
   }
 
   #request_button:hover {

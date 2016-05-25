@@ -1,0 +1,7 @@
+.row
+  .col-md-6
+    = "You've received an email from #{@message_details[:first_name]} #{@message_details[:last_name]} requesting app information"
+
+.row
+  .col-md-8
+    = @message_details[:message]

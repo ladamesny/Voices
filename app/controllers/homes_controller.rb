@@ -1,12 +1,12 @@
 class HomesController < ApplicationController
 
   def index
-    @name = params[:name]
-    @email = params[:email]
-    ActionMailer::Base.mail(:from => @email,
-      :to => 'jadames.rtest@gmail.com',
-      :subject => "A new information request from #{@name}",
-      :body => "Thanks for your message").deliver_now
+    contact_form = {}
+    contact_form[:first_name] = params[:first_name]
+    contact_form[:last_name] = params[:last_name]
+    contact_form[:email] = params[:email]
+    contact_form[:message] = params[:message]
+    MailWorker.perform_async(contact_form.to_json)
   end
 
   def about
