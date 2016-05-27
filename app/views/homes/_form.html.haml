@@ -1,5 +1,4 @@
-= flash[:notice]
-= form_tag("/homes/index") do
+= form_tag send_message_path, remote: :true do
   .row
     .form-group
       .col-sm-5.col-md-5.col-md-offset-1
