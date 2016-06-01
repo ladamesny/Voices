@@ -9,7 +9,7 @@ class HomesController < ApplicationController
     @email = params[:email]
     @message = params[:message]
     ActionMailer::Base.mail(:from => @email,
-      :to => 'jimmy.adames@gmail.com',
+      :to => 'john@tryvoices.com',
       :subject => "A new contact message from #{@first_name} #{@last_name}",
       :body => @message).deliver_now
   end
