@@ -22,7 +22,6 @@ gem 'httparty'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'sidekiq'
-gem "letter_opener"
 gem "launchy"
 gem 'sinatra', '>= 1.3.0', :require => nil
 gem 'font-awesome-sass'

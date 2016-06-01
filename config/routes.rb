@@ -9,8 +9,7 @@ Rails.application.routes.draw do
   get 'individuals', to: "homes#individuals"
   get 'contact', to: "homes#contact"
 
-  post 'homes/index'
+  post 'homes/thank_you'
 
   resources :blog_posts
-  resources "contacts", only: [:new, :create]
 end
