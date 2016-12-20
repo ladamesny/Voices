@@ -1,5 +1,7 @@
 class HomesController < ApplicationController
 
+  before_action :authenticate_user!, only: [:admin]
+
   def index
   end
 
@@ -12,6 +14,9 @@ class HomesController < ApplicationController
       :to => 'john@tryvoices.com',
       :subject => "A new contact message from #{@first_name} #{@last_name}",
       :body => @message).deliver_now
+  end
+
+  def admin
   end
 
   def about

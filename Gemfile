@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.1"
+ruby "2.2.3"
 
 gem 'rails', '4.2.5'
 gem 'pg', '~> 0.15'
@@ -19,10 +19,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 gem 'httparty'
-gem 'mail_form', '~> 1.5', '>= 1.5.1'
-gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'sidekiq'
-gem "launchy"
 gem 'sinatra', '>= 1.3.0', :require => nil
 gem 'font-awesome-sass'
 
@@ -31,6 +28,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'byebug'
+  gem 'nokogiri'
   gem 'pry'
 end
 

@@ -24,3 +24,9 @@
           =link_to "Blog", '//tryvoices.wordpress.com', target: '_blank'
         %li
           =link_to "Contact", contact_path
+      %ul.nav.navbar-nav.navbar-right
+        - if current_user && current_user.admin?
+          %li
+            =link_to "Admin Tools", admin_path
+          %li
+            =link_to "Logout", destroy_user_session_path, :method => :delete

@@ -16,4 +16,8 @@
 
   %body{ class: "#{controller_name} #{action_name}"}
     = render partial: 'layouts/header.html.haml'
+    - if notice
+      %p.alert.alert-success= notice
+    - if alert
+      %p.alert.alert-danger= alert
     = yield
